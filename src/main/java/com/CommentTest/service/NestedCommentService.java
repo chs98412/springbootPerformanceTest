@@ -30,8 +30,8 @@ public class NestedCommentService {
         for (NestedComment nestedComment : nestedComments) {
             response.add(NestedCommentDTO.Response
                     .builder()
-                    .id(comment.getId())
-                    .body(comment.getBody())
+                    .id(nestedComment.getId())
+                    .body(nestedComment.getBody())
                     .build());
         }
 

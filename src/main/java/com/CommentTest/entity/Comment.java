@@ -13,17 +13,13 @@ import java.util.Objects;
 @Getter
 @Setter
 public class Comment {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
 
     @ManyToOne
     private Article article;
 
     private String body;
-
-
 
 }
